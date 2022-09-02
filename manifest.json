@@ -1,0 +1,13 @@
+{
+    "name": "Clear paging.",
+    "description": "This extension indicates the previous page when the PAGE UP or PAGE DOWN button is pressed, so that the user's eyes do not have to search for where they left after pressing either of these buttons.",
+    "version": "1.0",
+    "manifest_version": 3,
+    "content_scripts": [
+        {
+          "matches": ["https://*/*", "http://*/*"],
+          "css": ["styles.css"],
+          "js": ["thirdParty/jquery-3.6.1.min.js", "paging.js"]
+        }
+      ]
+}
